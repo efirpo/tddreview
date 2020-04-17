@@ -1,4 +1,4 @@
-export class solarAgeCalculato {
+export class solarAgeCalculator {
   constructor() {
     this.year;
     this.month;
