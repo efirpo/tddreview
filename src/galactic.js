@@ -19,7 +19,7 @@ export class solarAgeCalculator {
   };
 
   marsAge() {
-    //   this.mars = Math.round((this.age) * 365 / 687)
+    this.mars = Math.round((this.ageInDays / 687))
   };
 
   // jupiterAge() {
