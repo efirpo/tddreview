@@ -17,6 +17,6 @@ export class solarAgeCalculator {
   }
 
   marsAge() {
-
+    this.mars = Math.floor((this.age) * 365 / 687)
   }
 }
