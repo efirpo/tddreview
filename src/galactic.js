@@ -2,7 +2,8 @@
 
 export class solarAgeCalculator {
   constructor(year, month, day) {
-    // this.ageinDays = Math.round((new Date() - new Date(year, month, day)) / (1000 * 60 * 60 * 24));
+    this.ageinDays;
+    // Math.round((new Date() - new Date(year, month, day)) / (1000 * 60 * 60 * 24));
     this.mercury;
     this.venus;
     this.mars;
