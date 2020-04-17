@@ -21,6 +21,6 @@ export class solarAgeCalculator {
   }
 
   jupiterAge() {
-
+    this.jupiter = Math.round((this.age) / 12)
   }
 }
