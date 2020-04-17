@@ -44,13 +44,13 @@ describe('solar system age calculations', () => {
     solarAges.jupiterAge();
     expect(solarAges.jupiter).toEqual(3)
   });
-  // test('should calculate remaing life expected in Earth years', () => {
-  //   let solarAges = new solarAgeCalculator();
-  //   solarAges.splitDate("1984-12-15")
-  //   solarAges.calculateAgeInDays();
-  //   solarAges.calculateLifeExpectancy(71);
-  //   expect(solarAges.lifeExpect).toEqual(36)
-  // })
+  test('should calculate remaining life expected in Earth years', () => {
+    let solarAges = new solarAgeCalculator();
+    solarAges.splitDate("1984-12-15")
+    solarAges.calculateAgeInDays();
+    solarAges.calculateLifeExpectancy(71);
+    expect(solarAges.lifeExpect).toEqual(36)
+  })
   // test('should calculate remaining life expectancy in Mercurial years', () => {
   //   let solarAges = new solarAgeCalculator();
   //   solarAges.splitDate("1984-12-15")
