@@ -27,27 +27,27 @@ describe('solar system age calculations', () => {
   });
   test('should calculate remaing life expected in Earth years', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
-    solarAges.calculateLifeExpectancy();
+    solarAges.calculateLifeExpectancy(71);
     expect(solarAges.lifeExpect).toEqual(36)
   })
   test('should calculate remaining life expectancy in Mercurial years', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
-    solarAges.calculateLifeExpectancy();
+    solarAges.calculateLifeExpectancy(71);
     expect(solarAges.mercExpect).toEqual(147)
   })
   test('should calculate remaining life expectancy in Venusian years', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
-    solarAges.calculateLifeExpectancy();
+    solarAges.calculateLifeExpectancy(71);
     expect(solarAges.venExpect).toEqual(58)
   })
   test('should calculate remaining life expectancy in Martian years', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
-    solarAges.calculateLifeExpectancy();
+    solarAges.calculateLifeExpectancy(71);
     expect(solarAges.marsExpect).toEqual(19)
   })
   test('should calculate remaining life expectany in Jovian years', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
-    solarAges.calculateLifeExpectancy();
+    solarAges.calculateLifeExpectancy(71);
     expect(solarAges.jupExpect).toEqual(3)
   })
 });
