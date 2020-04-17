@@ -37,6 +37,7 @@ describe('solar system age calculations', () => {
   })
   test('should calculate remaining life expectancy in Venusian years', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
+    solarAges.calculateLifeExpectancy();
     expect(solarAges.venExpect).toEqual(58)
   })
 });
