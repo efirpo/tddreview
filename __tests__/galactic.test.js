@@ -10,12 +10,12 @@ describe('solar system age calculations', () => {
     solarAges.splitDate("1984-12-15");
     expect(solarAges.year).toEqual("1984")
   })
-  // test('should calculate Age in Days', () => {
-  //   let solarAges = new solarAgeCalculator();
-  //   solarAges.splitDate("1984-12-15");
-  //   solarAges.calculateAgeInDays();
-  //   expect(solarAges.ageInDays).toEqual(12908);
-  // });
+  test('should calculate Age in Days', () => {
+    let solarAges = new solarAgeCalculator();
+    solarAges.splitDate("1984-12-15");
+    solarAges.calculateAgeInDays();
+    expect(solarAges.ageInDays).toEqual(12908);
+  });
   // test('should calculate age in Mercurial years', () => {
   //   let solarAges = new solarAgeCalculator();
   //   solarAges.splitDate("1984-12-15");

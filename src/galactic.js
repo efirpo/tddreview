@@ -24,7 +24,7 @@ export class solarAgeCalculator {
   }
 
   calculateAgeInDays() {
-    this.ageInDays = Math.round((new Date() - new Date(this.year, (this.month - 1), this.day)) / (1000 * 60 * 60 * 24));
+    // this.ageInDays = Math.round((new Date() - new Date(this.year, (this.month - 1), this.day)) / (1000 * 60 * 60 * 24));
   }
 
   mercuryAge() {
