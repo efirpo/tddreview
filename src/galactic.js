@@ -20,7 +20,7 @@ export class solarAgeCalculator {
     let valArray = value.split("-");
     this.year = valArray[0];
     this.month = valArray[1];
-    this.day = valArray[2]
+    this.day = valArray[2];
   }
 
   calculateAgeInDays() {

@@ -3,28 +3,45 @@
 
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
 
   <title>Solar System Age Calculators</title>
 </head>
 
 <body>
   <div class="container">
-    <form id="age-form">
-      <label for="bday-input">Enter your birthday:</label>
-      <input id="bday-input" type="date">
-      <label for="demographic">Please choose the demographic that fits you best:</label>
-      <select class="select" id="demographic">
-        <option value="blank"></option>
-        <option value="75">Black</option>
-        <option value="83">Latinx</option>
-        <option value="77">Indian/First Peoples</option>
-        <option value="79">Caucasian</option>
-        <option value="87">Asian American</option>
-      </select>
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="solution"></ul>
-  </div>
+    <img src="../assets/images/planets.png" alt="planets" title="a glorious conjunction">
+    <div id="inputs">
+
+      <form id="age-form">
+        <label for="bday-input">Enter your birthday:</label>
+        <input id="bday-input" type="date"><br><br>
+        <label for="demographic">Please choose the demographic that describes you best:</label>
+        <select class="select" id="demographic">
+          <option value="blank"></option>
+          <option value="75">Black</option>
+          <option value="83">Latinx</option>
+          <option value="77">Indian/First Peoples</option>
+          <option value="79">Caucasian</option>
+          <option value="87">Asian American</option>
+        </select><br><br>
+        <button type="submit" class="btn btn-default">Calculate</button>
+      </form>
+    </div>
+    <div id="results">
+
+      <p>You are <span id="age-in-days"></span> days old on Earth</p><br>
+      Which makes you:<br>
+      <p><em><span id="age-merc"></span></em> years old on Mercury, and can expect to live another <span
+          id="life-merc"></span> Mercurial years.</p><br>
+      <p><em><span id="age-ven"></span></em> years old on Venus, and can expect to live another <span
+          id="life-ven"></span> Venusian years.</p><br>
+      <p><em><span id="age-mars"></span></em> years old on Mars, and can expect to live another <span
+          id="life-mars"></span> Martian years.</p><br>
+      <p>and <em><span id="age-jup"></span></em> years old on Jupiter, where you will only live another<span
+          id="life-jup"></span> Jovian years.</p>
+
+    </div>
 </body>
 
 </html>

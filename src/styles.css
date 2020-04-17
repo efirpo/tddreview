@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  color: white;
+  font-size: 1.3vw;
+}
+img {
+  height:100vh;
+}
+.container {
+  display: flex;
+}
+#inputs {
+  align-self: center;
+  text-align: right;
+  padding: 2vw;
+  width: 20vw;
+}
+#results {
+  padding: 3vw;
+  align-self: center;
+}
+#bday-input {
+  color: black;
+}
+
+#demographic {
+  color: black;
+}
