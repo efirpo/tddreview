@@ -5,6 +5,7 @@ body {
 }
 img {
   height:100vh;
+  border-right: .5vw solid white
 }
 .container {
   display: flex;
@@ -19,8 +20,14 @@ img {
   padding: 3vmin;
   align-self: center;
   display: none;
-  
 }
+
+#elder-results {
+  padding: 3vmin;
+  align-self: center;
+  display: none;
+}
+
 #bday-input {
   color: black;
 }

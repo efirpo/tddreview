@@ -15,16 +15,29 @@ $(document).ready(function () {
     ages.marsAge();
     ages.jupiterAge();
     ages.calculateLifeExpectancy($('#demographic').val());
-    $('#age-in-days').html(ages.ageInDays);
-    $('#age-merc').html(ages.mercury);
-    $('age-ven').html(ages.venus);
-    $('#age-mars').html(ages.mars);
-    $('#age-jup').html(ages.jupiter);
-    $('life-merc').html(ages.mercExpect);
-    $('#life-ven').html(ages.venExpect);
-    $('#life-mars').html(ages.marsExpect);
-    $('#life-jup').html(ages.jupExpect);
-    $('#results').fadeIn(100).addClass('animated fadeInRight');
+    if (ages.lifeExpect < 0) {
+      $('.age-in-days').append(ages.ageInDays);
+      $('.age-merc').append(ages.mercury);
+      $('.age-ven').append(ages.venus);
+      $('.age-mars').append(ages.mars);
+      $('.age-jup').append(ages.jupiter);
+      $('.life-merc').append(Math.abs(ages.mercExpect));
+      $('.life-ven').append(Math.abs(ages.venExpect));
+      $('.life-mars').append(Math.abs(ages.marsExpect));
+      $('.life-jup').append(Math.abs(ages.jupExpect));
+      $('#elder-results').fadeIn(100).addClass('animated fadeInRight')
+    } else {
+      $('.age-in-days').append(ages.ageInDays);
+      $('.age-merc').append(ages.mercury);
+      $('.age-ven').append(ages.venus);
+      $('.age-mars').append(ages.mars);
+      $('.age-jup').append(ages.jupiter);
+      $('.life-merc').append(ages.mercExpect);
+      $('.life-ven').append(ages.venExpect);
+      $('.life-mars').append(ages.marsExpect);
+      $('.life-jup').append(ages.jupExpect);
+      $('#results').fadeIn(100).addClass('animated fadeInRight');
+      }
   });
 
 });
