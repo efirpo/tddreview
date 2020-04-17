@@ -79,4 +79,11 @@ describe('solar system age calculations', () => {
     solarAges.calculateLifeExpectancy(71);
     expect(solarAges.jupExpect).toEqual(3)
   })
+  test('should calculate if user inputted age is greater than life expectancy', () => {
+    let solarAges = new solarAgeCalculator();
+    solarAges.splitDate("1920-12-15");
+    solarAges.calculateAgeInDays();
+    solarAges.calculateLifeExpectancy(71);
+    expect(solarAges.overStay).toEqual(28)
+  })
 });
