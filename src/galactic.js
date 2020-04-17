@@ -11,4 +11,8 @@ export class solarAgeCalculator {
   mercuryAge() {
     this.mercury = Math.floor((this.age * 365) / 88)
   }
+
+  venusAge() {
+
+  }
 }
