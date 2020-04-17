@@ -5,6 +5,12 @@ export class solarAgeCalculator {
     this.venus;
     this.mars;
     this.jupiter;
+    this.lifeExpect;
+    this.mercExpect;
+    this.venExpect;
+    this.marsExpect;
+    this.jupExpect;
+
   }
 
   mercuryAge() {
@@ -24,6 +30,6 @@ export class solarAgeCalculator {
   }
 
   calculateLifeExpectancy() {
-
+    this.lifeExpect = Math.round(71 - (this.ageInDays / 365))
   }
 }

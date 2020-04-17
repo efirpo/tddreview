@@ -28,9 +28,13 @@ open dist/index.html in the browser of your choice.
 |-----|-----|-----|
 |Program will allow a user to input their birthday|12/15/1984|12/15/1984|
 |Program will calculate how many days the user has been alive|12/15/1984|12876|
-|Program will calculate how many Mercurial years the user has been alive|12/15/1984|146|
+|Program will calculate how many Mercurial years the user has been alive|12/15/1984|147|
 |Program will calculate how many Venusian years the user has been alive|12/15/1984|57|
 |Program will calculate how many Jovian years the user has been alive|12/15/1984|3|
+|Program will calculate remaining life expected in Earth years|12/15/1984|36|
+|Program will calculate remaining life expected in Mercurial years|12/15/1984|147|
+|Program will calculate remaining life expected in Venusian years|12/15/1984|58|
+|Program will calculate remaining life expected in Jovian years|12/15/1984|3|
 
 ## Legal
 
