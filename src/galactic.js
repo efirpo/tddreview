@@ -15,4 +15,8 @@ export class solarAgeCalculator {
   venusAge() {
     this.venus = Math.floor((this.age * 365) / 225)
   }
+
+  marsAge() {
+
+  }
 }
