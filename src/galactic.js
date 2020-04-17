@@ -6,4 +6,9 @@ export class solarAgeCalculator {
     this.mars;
     this.jupiter;
   }
+  // calculations simplified by only using years and ignoring leap years
+
+  mercuryAge() {
+    this.mercury = Math.floor((this.age * 365) / 88)
+  }
 }
