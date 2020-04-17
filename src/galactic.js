@@ -1,6 +1,9 @@
 export class solarAgeCalculator {
-  constructor(year, month, day) {
-    this.ageInDays = Math.round((new Date() - new Date(year, (month - 1), day)) / (1000 * 60 * 60 * 24));
+  constructor() {
+    this.year;
+    this.month;
+    this.day;
+    this.ageInDays;
     this.mercury;
     this.venus;
     this.mars;
@@ -11,6 +14,17 @@ export class solarAgeCalculator {
     this.marsExpect;
     this.jupExpect;
 
+  }
+
+  splitDate(value) {
+    let valArray = value.split("-");
+    this.year = valArray[0];
+    this.month = valArray[1];
+    this.day = valArray[2]
+  }
+
+  calculateAgeInDays() {
+    this.ageInDays = Math.round((new Date() - new Date(this.year, (this.month - 1), this.day)) / (1000 * 60 * 60 * 24));
   }
 
   mercuryAge() {
