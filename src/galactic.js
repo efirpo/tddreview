@@ -11,7 +11,7 @@ export class solarAgeCalculator {
   // calculations simplified by only using years and ignoring leap years
 
   mercuryAge() {
-    // this.mercury = Math.round((this.ageinDays / 88))
+    this.mercury = Math.round((this.ageInDays / 88))
   };
 
   // venusAge() {

@@ -7,6 +7,7 @@ describe('solar system age calculations', () => {
   })
   test('should calculate age in Mercury years', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
-    expect(solarAges.mercury).toEqual(146)
+    solarAges.mercuryAge();
+    expect(solarAges.mercury).toEqual(146);
   })
 })
