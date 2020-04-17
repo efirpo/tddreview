@@ -12,12 +12,14 @@ img {
 #inputs {
   align-self: center;
   text-align: right;
-  padding: 2vw;
-  width: 20vw;
+  padding: 2vmin;
+  width: 20vmax;
 }
 #results {
-  padding: 3vw;
+  padding: 3vmin;
   align-self: center;
+  display: none;
+  
 }
 #bday-input {
   color: black;

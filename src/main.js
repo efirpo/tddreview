@@ -15,6 +15,16 @@ $(document).ready(function () {
     ages.marsAge();
     ages.jupiterAge();
     ages.calculateLifeExpectancy();
-
+    $("#age-in-days").html(ages.ageInDays);
+    $("#age-merc").html(ages.mercury);
+    $("age-ven").html(ages.venus);
+    $("#age-mars").html(ages.mars);
+    $("#age-jup").html(ages.jupiter);
+    $("life-merc").html(ages.mercExpect);
+    $("#life-ven").html(ages.venExpect);
+    $("#life-mars").html(ages.marsExpect);
+    $("#life-jup").html(ages.jupExpect);
+    $("#results").fadeIn(100).addClass("animated fadeInRight");
   });
+
 });
