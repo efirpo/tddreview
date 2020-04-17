@@ -31,7 +31,7 @@ export class solarAgeCalculator {
 
   calculateLifeExpectancy() {
     this.lifeExpect = Math.round(71 - (this.ageInDays / 365))
-    // this.mercExpect = Math.round(((71 * 365) / 88) - Math.round((this.ageInDays / 88)))
+    this.mercExpect = Math.round(((71 * 365) / 88) - Math.round((this.ageInDays / 88)))
   }
 
 }
