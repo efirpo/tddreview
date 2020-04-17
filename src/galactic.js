@@ -23,7 +23,7 @@ export class solarAgeCalculator {
   };
 
   jupiterAge() {
-    //   this.jupiter = Math.round((this.age) / 12)
+    this.jupiter = Math.round((this.ageInDays / 365) / 12)
   };
 
 }
