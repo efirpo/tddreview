@@ -1,17 +1,36 @@
-# TITLE
+# Galactic Age Calculator
 
 ## by Ethan Firpo (2020)
 
 ## Description
 
+This website allows a user to input their birth date and will calculate how many Mercurial, Venusian, Martian, and Jovian years they have lived. It will also return how many more years on those planets they have left to live given the average life expectancy given by the World Health Organization. 
+
 ## Setup
 
+Install Node.
+Clone this repository.
+In your terminal, run npm install.
+in your terminal, run npm build.
+open dist/index.html in the browser of your choice.
+
 ## Technology
+
+#### HTML
+#### CSS
+#### JavaScript
+#### jQuery Script Library
+#### webpack
 
 ## Specs
 
 |Behavior|Input|Output|
 |-----|-----|-----|
+|Program will allow a user to input their birthday|12/15/1984|12/15/1984|
+|Program will calculate how many days the user has been alive|12/15/1984|12876|
+|Program will calculate how many Mercurial years the user has been alive|12/15/1984|146|
+|Program will calculate how many Venusian years the user has been alive|12/15/1984|57|
+|Program will calculate how many Jovian years the user has been alive|12/15/1984|3|
 
 ## Legal
 
