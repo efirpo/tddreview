@@ -51,7 +51,9 @@ export class solarAgeCalculator {
     this.marsExpect = Math.round(((demographic * 365) / 687) - Math.round((this.ageInDays / 687)));
     this.jupExpect = Math.round((demographic / 12) - Math.round(((this.ageInDays / 365) / 12)));
 
-
+    if ((this.lifeExpect) < 0) {
+      this.overStay = (Math.round(this.ageInDays / 365) - demographic)
+    }
 
   }
 
