@@ -45,4 +45,9 @@ describe('solar system age calculations', () => {
     solarAges.calculateLifeExpectancy();
     expect(solarAges.marsExpect).toEqual(19)
   })
+  test('should calculate remaining life expectany in Jovian years', () => {
+    let solarAges = new solarAgeCalculator(1984, 12, 15);
+    solarAges.calculateLifeExpectancy();
+    expect(solarAges.jupExpect).toEqual(3)
+  })
 });
