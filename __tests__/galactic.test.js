@@ -15,4 +15,9 @@ describe('solar system age calculations', () => {
     solarAges.venusAge();
     expect(solarAges.venus).toEqual(57)
   })
+  test('should calculate age in Martian years', () => {
+    let solarAges = new solarAgeCalculator(1984, 12, 15);
+    solarAges.marsAge();
+    expect(solarAges.mars).toEqual(19)
+  })
 })

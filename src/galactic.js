@@ -18,9 +18,9 @@ export class solarAgeCalculator {
     this.venus = Math.round((this.ageInDays / 225))
   };
 
-  // marsAge() {
-  //   this.mars = Math.round((this.age) * 365 / 687)
-  // };
+  marsAge() {
+    //   this.mars = Math.round((this.age) * 365 / 687)
+  };
 
   // jupiterAge() {
   //   this.jupiter = Math.round((this.age) / 12)
