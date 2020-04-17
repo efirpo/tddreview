@@ -5,9 +5,14 @@ describe('solar system age calculations', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
     expect(solarAges.ageInDays).toEqual(12876);
   })
-  test('should calculate age in Mercury years', () => {
+  test('should calculate age in Mercurial years', () => {
     let solarAges = new solarAgeCalculator(1984, 12, 15);
     solarAges.mercuryAge();
     expect(solarAges.mercury).toEqual(146);
+  })
+  test('should calculate age in Venusian years', () => {
+    let solarAges = new solarAgeCalculator(1984, 12, 15);
+    solarAges.venusAge();
+    expect(solarAges.venus).toEqual(57)
   })
 })
