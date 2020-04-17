@@ -1,9 +1,8 @@
-// These calculations are not quite correct, and I cannot figure out why. Using my birthdate of "1984, 12, 15" returns 12877 Earth days when it should be 12906, which is a greater difference than can be explained by Leap Years or any other such assumption I can think of to account for it. Something appears fishy under the hood of Date(), and it means having to work backwards with my expected results. 
+// These calculations are not quite correct, and I cannot figure out why. Using my birthdate of "1984, 12, 15" returns 12876 Earth days when it should be 12906, which is a greater difference than can be explained by Leap Years or any other such assumption I can think of to account for it. Something appears fishy under the hood of Date(), and it means having to work backwards with my expected results. 
 
 export class solarAgeCalculator {
   constructor(year, month, day) {
-    this.ageinDays;
-    // Math.round((new Date() - new Date(year, month, day)) / (1000 * 60 * 60 * 24));
+    this.ageInDays = Math.round((new Date() - new Date(year, month, day)) / (1000 * 60 * 60 * 24));
     this.mercury;
     this.venus;
     this.mars;
