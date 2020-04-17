@@ -4,7 +4,7 @@
 
 ## Description
 
-This website allows a user to input their birth date and will calculate how many Mercurial, Venusian, Martian, and Jovian years they have lived. It will also return how many more years on those planets they have left to live given the average life expectancy given by the World Health Organization. 
+This website allows a user to input their birth date and will calculate how many Mercurial, Venusian, Martian, and Jovian years they have lived. It will also return how many more years on those planets they have left to live given the average life expectancy given by the Center for Disease Control for US demographics.
 
 ## Setup
 
