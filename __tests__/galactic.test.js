@@ -5,6 +5,11 @@ describe('solar system age calculations', () => {
     let solarAges = new solarAgeCalculator();
     expect(solarAges).toBeInstanceOf(solarAgeCalculator);
   })
+  test('should split date value into year, month, and day values inside solarAgeCalculator object', () => {
+    let solarAges = new solarAgeCalculator();
+    solarAges.splitDate("1984-12-15");
+    expect(solarAges.year).toEqual("1984")
+  })
   // test('should calculate Age in Days', () => {
   //   let solarAges = new solarAgeCalculator();
   //   solarAges.splitDate("1984-12-15");
