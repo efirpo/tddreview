@@ -20,4 +20,9 @@ describe('solar system age calculations', () => {
     solarAges.marsAge();
     expect(solarAges.mars).toEqual(19)
   })
+  test('should calculate age in Jovian years', () => {
+    let solarAges = new solarAgeCalculator(1984, 12, 15);
+    solarAges.jupiterAge();
+    expect(solarAges.jupiter).toEqual(3)
+  })
 })
