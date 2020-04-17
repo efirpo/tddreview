@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <title>Solar System Age Calculators</title>
+</head>
+
+<body>
+  <div class="container">
+    <form id="age-form">
+      <label for="bday-input">Enter your birthday:</label>
+      <input id="bday-input" type="date">
+      <label for="demographic">Please choose the demographic that fits you best:</label>
+      <select class="select" id="demographic">
+        <option value="blank"></option>
+        <option value="black">Black</option>
+        <option value="latinx">Latinx</option>
+        <option value="indian">Indian/First Peoples</option>
+        <option value="white">Caucasian</option>
+        <option value="asian">Asian American</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <ul id="solution"></ul>
+  </div>
+</body>
+
+</html>
