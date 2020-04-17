@@ -33,6 +33,7 @@ export class solarAgeCalculator {
     this.lifeExpect = Math.round(71 - (this.ageInDays / 365))
     this.mercExpect = Math.round(((71 * 365) / 88) - Math.round((this.ageInDays / 88)))
     this.venExpect = Math.round(((71 * 365) / 225) - Math.round((this.ageInDays / 225)))
+    this.marsExpect = Math.round(((71 * 365) / 687) - Math.round((this.ageInDays / 687)))
   }
 
 }
