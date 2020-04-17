@@ -13,11 +13,16 @@ describe('solar system age calculations', () => {
   test('should calculate age in years on venus', () => {
     let solarAges = new solarAgeCalculator(35);
     solarAges.venusAge();
-    expect(solarAges.venus).toEqual(56)
+    expect(solarAges.venus).toEqual(57)
   })
   test('should calculate age in Mars years', () => {
     let solarAges = new solarAgeCalculator(35);
     solarAges.marsAge();
-    expect(solarAges.mars).toEqual(18)
+    expect(solarAges.mars).toEqual(19)
+  })
+  test('should calculate age in Jupiter years', () => {
+    let solarAges = new solarAgeCalculator(35);
+    solarAges.jupiterAge();
+    expect(solarAges.jupiter).toEqual(3)
   })
 })
